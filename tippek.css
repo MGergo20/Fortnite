@@ -59,7 +59,7 @@ nav ul li a:hover {
 }
 
 
-article body {
+article {
         margin: 20px;
         display: flex;
         flex-wrap: wrap;
