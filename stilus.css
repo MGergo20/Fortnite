@@ -116,9 +116,12 @@ article {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
     text-align: center;
+    
+
 }
 .kosar img{
     width: 100%;
+    
 }
 .kosar h2 {
     font-size: 1.8rem;
