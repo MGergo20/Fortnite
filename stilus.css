@@ -117,14 +117,9 @@ article {
     margin-top: 20px;
     text-align: center;
 }
-aside img{
-    border: 1px solid #333;
-    border-radius: 5px;
-    background: #333;
-    width: 800px;
-    height: auto;
+.kosar img{
+    width: 100%;
 }
-
 .kosar h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
