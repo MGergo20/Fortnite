@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #1e1e1e;
+    background-image: url(kepek/hatter1.jpg);
     color: #fff;
 }
 
@@ -115,6 +115,7 @@ article {
     width: 28%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
+    text-align: center;
 }
 
 .kosar h2 {
