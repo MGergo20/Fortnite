@@ -1,0 +1,168 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url(kepek/hatter1.jpg);
+    color: #fff;
+}
+
+
+header {
+    background: #202020;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #202020;
+    border-radius: 5px;
+}
+
+
+article body {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        align-items: center;      
+        text-align: center;       
+}
+
+
+.Tartalom {
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%; 
+    text-align: center;
+}
+
+.Tartalom h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.Tartalom img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.Tartalom p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.Tartalom a {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.Tartalom a:hover {
+    background: #0056b3;
+}
+
+.elrendezes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vegosszeg {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.fizetes {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.fizetes:hover {
+    background: #218838;
+}
+
+
+footer {
+    background: #202020;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 768px) {
+    article {
+        flex-direction: column;
+    }
+
+    .Tartalom {
+        width: 100%;
+    }
+
+    .kosar {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
