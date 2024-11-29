@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szente Bence, Medgyaszay Gergő</title>
-    <link rel="stylesheet" href="stilus.css"> 
+    <link rel="stylesheet" href="stilus.css">
+    <title>Fortnite Weboldal</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <main>
+        <header>
             <h1>Fortnite Weboldal</h1>
-        </div>
+        </header>
+
         <nav>
             <ul>
                 <li><a href="#home">Kezdőlap</a></li>
@@ -20,47 +21,54 @@
                 <li><a href="#events">Események</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        
-        <section id="home">
-            <h2>Üdvözlünk a Fortnite világában!</h2>
-            <p>Itt mindent megtalálsz a Fortnite játékról, friss hírekkel, tippekkel és a legújabb eseményekkel.</p>
-        </section>
+
+        <article>
+            
+            <div id="home" class="Tartalom">
+                <h2>Üdvözlünk a Fortnite világában!</h2>
+                <p>Itt mindent megtalálsz a Fortnite játékról, friss hírekkel, tippekkel és a legújabb eseményekkel.</p>
+            </div>
 
         
-        <section id="news">
-            <h2>Legújabb hírek</h2>
-            <article>
-                <h3>Új szezon érkezett!</h3>
-                <p>A Fortnite új szezonja elkezdődött! Ismerd meg az új pályákat és fegyvereket!</p>
-            </article>
-        </section>
+            <div id="news" class="Tartalom">
+                <h2>Legújabb hírek</h2>
+                <article>
+                    <h3>Új szezon érkezett!</h3>
+                    <img src="kepek/fortnite_season.jpg" alt="Új szezon a Fortnite-ban">
+                    <p>A Fortnite új szezonja elkezdődött! Ismerd meg az új pályákat és fegyvereket!</p>
+                </article>
+            </div>
 
-        
-        <section id="tips">
-            <h2>Tippek és trükkök</h2>
-            <p>Tanuld meg, hogyan válhatsz profi Fortnite játékossá a legjobb tippekkel!</p>
-        </section>
+            
+            <div id="tips" class="Tartalom">
+                <h2>Tippek és trükkök</h2>
+                <p>Tanuld meg, hogyan válhatsz profi Fortnite játékossá a legjobb tippekkel!</p>
+            </div>
 
-        
-        <section id="community">
-            <h2>Közösség</h2>
-            <p>Csatlakozz a Fortnite közösséghez, kövess minket a közösségi oldalakon!</p>
-        </section>
+           
+            <div id="community" class="Tartalom">
+                <h2>Közösség</h2>
+                <p>Csatlakozz a Fortnite közösséghez, kövess minket a közösségi oldalakon!</p>
+            </div>
 
-        
-        <section id="events">
-            <h2>Jelenlegi események</h2>
-            <p>Ne hagyd ki a Fortnite legújabb eseményeit! Versenyek, kihívások és egyéb szórakoztató programok várnak rád.</p>
-        </section>
+            
+            <div id="events" class="Tartalom">
+                <h2>Jelenlegi események</h2>
+                <p>Ne hagyd ki a Fortnite legújabb eseményeit! Versenyek, kihívások és egyéb szórakoztató programok várnak rád.</p>
+            </div>
+        </article>
+
+        <aside class="kosar">
+            <h2>A Kosár Tartalma</h2>
+            <p><span>Új szezon tartalma</span> <span>Ajándékok, új fegyverek</span></p>
+            <p><span>Exkluzív bónuszok</span> <span>Extra XP</span></p>
+            <span class="vegosszeg">Végösszeg: 1000 V-Bucks</span>
+            <a class="fizetes" href="#">Tovább a fizetéshez</a>
+        </aside>
+
+        <footer>
+            <p>Fortnite Weboldal - Szente Bence és Medgyaszay Gergő</p>
+        </footer>
     </main>
-
-    
-    <footer>
-        
-    </footer>
-
-    <script src="script.js"></script> 
 </body>
 </html>

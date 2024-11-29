@@ -1,64 +1,182 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e;
-    color: white;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
 
 header {
-    background-color: #0a74da;
-    padding: 20px;
+    background: #202020;
+    color: #ffcc00;
     text-align: center;
+    padding: 20px 0;
 }
 
-header .logo h1 {
-    margin: 0;
-    font-size: 3em;
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+nav {
+    background: #333;
+    color: #fff;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin-right: 30px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
-main {
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #202020;
+    border-radius: 5px;
+}
+
+
+article {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.Tartalom {
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 20px;
+    margin-bottom: 20px;
+    width: 48%; 
+    text-align: center;
 }
 
-section {
-    margin-bottom: 40px;
+.Tartalom h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
 }
 
-h2 {
-    font-size: 2em;
-    color: #f2cb77;
+.Tartalom img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-h3 {
-    font-size: 1.5em;
+.Tartalom p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
+
+.Tartalom a {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.Tartalom a:hover {
+    background: #0056b3;
+}
+
+
+.kosar {
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 28%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.kosar h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.kosar p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.elrendezes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vegosszeg {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.fizetes {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.fizetes:hover {
+    background: #218838;
+}
+
 
 footer {
-    background-color: #333;
+    background: #202020;
+    color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
 
-footer p {
-    margin: 0;
+
+@media (max-width: 768px) {
+    article {
+        flex-direction: column;
+    }
+
+    .Tartalom {
+        width: 100%;
+    }
+
+    .kosar {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
