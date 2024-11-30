@@ -55,14 +55,19 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-
-article {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+main {
+    display: grid;
+    grid-template-columns: 68% 28%; /* Két oszlop: fő tartalom 68%, kosár 28% */
+    gap: 20px; /* Távolság a két oszlop között */
+    padding: 20px;
 }
 
+article {
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
 
 .Tartalom {
     background: #333;
@@ -112,12 +117,8 @@ article {
     background: #444;
     padding: 20px;
     border-radius: 8px;
-    width: 28%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
     text-align: center;
-    
-
 }
 .kosar img{
     width: 100%;
@@ -173,16 +174,12 @@ footer {
 
 
 @media (max-width: 768px) {
-    article {
-        flex-direction: column;
+    main {
+        grid-template-columns: 1fr; 
     }
-
-    .Tartalom {
-        width: 100%;
-    }
-
-    .kosar {
-        width: 100%;
-        margin-top: 20px;
+    
+    .kosar, article {
+        width: 100%; 
     }
 }
+
